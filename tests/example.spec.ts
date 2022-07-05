@@ -14,7 +14,7 @@ test.describe('Add fruit', () => {
     
     await page.locator('text=Add fruit').click();
 
-    await expect(page.locator('li')).toHaveCount(3);
+    await expect(page.locator('li')).toHaveCount(4);
 
     await expect(page.locator('li:nth-child(3)')).toContainText(fruitAdded.name)
   });
